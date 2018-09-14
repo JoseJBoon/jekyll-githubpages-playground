@@ -1,0 +1,22 @@
+title: Documentatie
+email: jose.boon@maykinmedia.nl
+description: >- # this means to ignore newlines until "baseurl:"
+  A static site build with Jekyll that might replace the Hugo version. 
+  (Followed https://nicolas-van.github.io/bootstrap-4-github-pages/ for adding bootstrap)
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  JoseJBoon
+
+theme: minima
+markdown: kramdown
+
+collections:
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
