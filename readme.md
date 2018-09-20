@@ -10,6 +10,7 @@ cd site-name
 2. Add GEMFILE
 
 ```
+#GEMFILE
 source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
 ```
