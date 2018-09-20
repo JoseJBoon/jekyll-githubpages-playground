@@ -24,4 +24,4 @@ sass:
   load_paths: 
     - _sass
     - externalsource
-    # - nodes_modules
+    - nodes_modules
