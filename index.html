@@ -16,3 +16,19 @@ layout: default
 {% endfor %}
 <br />
 <a href="{{ site.baseurl }}{% post_url 2011-12-31-post_category_c %}">post_url to c</a>
+
+<br />
+
+<h2> Pages </h2>
+
+{% assign groups = site.pages | sort: 'weight' | group_by: 'parent' %}
+{% for group in groups %}
+    {{ group.name }}
+    <ul>
+        {% for item in group.items %}
+        <li>
+            <a href="{{ item.url|relative_url }}">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endfor %}
