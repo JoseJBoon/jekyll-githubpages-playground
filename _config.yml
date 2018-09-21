@@ -12,6 +12,7 @@ markdown: kramdown
 collections:
   pages:
     output: true
+    monkeys: "wut?" # metadata site.collections | where: "monkeys", "wut?"
 
 defaults:
   - scope:
