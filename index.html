@@ -3,3 +3,16 @@ layout: default
 ---
 
 <h1>Hoozaa</h1>
+
+<h2> Posts </h2>
+{{ site.categories|size }}
+<br />
+{% for category in site.categories %}
+    {{ category[0] }},
+    <br />
+    {% for post in category[1] %}
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a><br />
+    {% endfor %}
+{% endfor %}
+<br />
+<a href="{{ site.baseurl }}{% post_url 2011-12-31-post_category_c %}">post_url to c</a>
