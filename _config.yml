@@ -13,11 +13,18 @@ collections:
   pages:
     output: true
     monkeys: "wut?" # metadata site.collections | where: "monkeys", "wut?"
+  content:
+    output: true
 
 defaults:
   - scope:
       path: ""
       type: "pages"
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "content"
     values:
       layout: default
 

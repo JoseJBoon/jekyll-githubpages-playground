@@ -1,5 +1,6 @@
 ---
 layout: default
+category: ["index"]
 ---
 
 <h1>Hoozaa</h1>
@@ -32,3 +33,18 @@ layout: default
         {% endfor %}
     </ul>
 {% endfor %}
+
+<br />
+
+<h2> Content </h2>
+
+{{ site.content|size }}
+
+<h2> Mapping catergories</h2>
+<a href="http://shopify.github.io/liquid/filters/map/">Liquid map</a><br />
+{%- assign all_categories = site.pages | map: "category" -%}
+{% for item in all_categories %}
+    {{ item }},
+{% endfor %}
+<br />
+
